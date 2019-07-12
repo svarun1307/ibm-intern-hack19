@@ -1,0 +1,4 @@
+applications:
+- name: talkingoctocat
+  random-route: true
+  memory: 512M

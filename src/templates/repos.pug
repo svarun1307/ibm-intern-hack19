@@ -1,0 +1,42 @@
+doctype html
+html(class="ap-style white-background no-margin")
+  head
+    style
+      include ../css/style.css
+    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",rel="stylesheet",type="text/css")
+    link(href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Open+Sans&display=swap",rel="stylesheet",type="text/css")
+    
+
+  body(class="ap-style white-background no-margin")
+      div(class="container cbfull table table-responsive")
+        h3(class="httext")
+            | Your Repositories. Choose any one.
+        div(class="table table-striped rep-table")
+            table(class="bx--data-table-v2 mtable")
+                <col width="4">
+                <col width="1">
+                thead
+                    tr
+                        th(class="table-head") Sr No.
+                        th(class="table-head") Repositories
+                        th(class="table-head") Select
+                tbody
+                    each i,j in repos
+                        tr
+                            td(class="table-button instance_content") #{j+1}
+                            td(class="table-button light-color") #{i.full_name}
+                            td(class="table-button")
+                                button(onclick='selectRepo(' + j + ',' + JSON.stringify(i) + ')',class="btn")
+                                    | Select >
+      script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+      script(type="text/javascript").
+        $(document).ready(function(){
+            
+        });
+        function selectRepo(a,b){
+            console.log(a);
+            console.log(b);
+            //alert("Select Repo");
+            window.location.href = "/select-repo-choice?repo="+b.full_name+"&repo_id="+b.id+"&owner="+b.owner.login;
+        }

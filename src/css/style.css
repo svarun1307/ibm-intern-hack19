@@ -1,0 +1,193 @@
+#login-button {
+    background-color: #3c4146;
+    color: #eef4ec;
+    padding: 1em;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -1em;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+    text-align: center;
+  }
+  
+
+.ibm-logo{
+    width: 250px;
+    height: 110px;
+}
+
+
+.git-logo{
+  width: 120px;
+  height: 110px;
+  margin-left: 50px;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  background: #b3b3b3 !important;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.cbfull{
+  width: 100%;
+  height: 100%;
+  background: #b3b3b3 !important;
+}
+
+.login-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-detail-box{
+  height: 40px;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  background: #221e20;
+  color: #ffffff;
+  margin-top: 20px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  cursor: pointer;
+  
+}
+
+.text-info1{
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: #221e20 !important;
+  margin-top: 10px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  
+}
+
+.mtable{
+  width: 100% !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  display: block !important;
+}
+
+.mtable td{
+  border-width: 0px !important;
+}
+
+.mtable tr > th:nth-child(3){
+  width: 15%;
+  vertical-align: middle;
+}
+
+.mtable tr > th:nth-child(1){
+  width: 10%;
+  vertical-align: middle;
+}
+
+.mtable tr > th:nth-child(2){
+  width: 75%;
+  vertical-align: middle;
+}
+
+.table-button button{
+  width: 100%;
+  background: #22262a;
+  color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.rep-table{
+  margin-top: 50px;
+  transition: all 0.4s;
+}
+
+.rep-table button:hover{
+  background: white !important;
+  color: #22262a;
+  border: 1px solid #22262a;
+  font-weight: bold;
+}
+
+.httext{
+  text-align: center;
+  margin-top: 50px;
+}
+
+.button-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #000000;
+  border-radius: 50%;
+}
+
+.button-play{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  border-width: 0px;
+  outline: none !important;
+}
+
+@keyframes pulse{
+	0%{
+		box-shadow: 0px 0px 5px 0px rgba(31, 112, 193,.5);
+	}
+	65%{
+		box-shadow: 0px 0px 5px 13px rgba(31, 112, 193,.5);
+	}
+	90%{
+		box-shadow: 0px 0px 5px 13px rgba(31, 112, 193,0);
+	}
+}
+
+.record{
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.watson-logo{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 49.5%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.noshow{
+  display: none;
+}
+
+.showit{
+  display: block;
+}
+
+#recordingsList{
+  display: none;
+}
+
+.bee-load{
+  display: none;
+}
