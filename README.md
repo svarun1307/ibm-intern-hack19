@@ -1,7 +1,17 @@
 # ibm-intern-hack19
 # Team 10
-GitHub Voice Assistant powered by Watson
 
+
+
+#### GitHub Voice Assistant powered by Watson 
+Our app uses system microphone to record user audio, we process this audio and send it to `Watson's Speech to Text API`.
+The keywords returned from Watson are matched for valid `GIT Commands`. If there is a match, I make a REST API Call to GitHub API V3. The data then returned from Github is processed to make a meaningful human understandable format. This is then passed to the `Watson's Text to Speech API`, which finally returns a audio file.
+This file is then run on the client browser, to let the system speakers read out loud the git information to the user.
+
+Hope you like the work!
+
+
+________________________________________________________________________________________
 #Demo URL
 [Visit App](https://talkingoctocat.us-south.cf.test.appdomain.cloud)
 
