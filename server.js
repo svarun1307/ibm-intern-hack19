@@ -267,7 +267,7 @@ app.post('/upload', upload.single('audio_data'), (req, res) => {
      var fs = require('fs');
      
      var speechToText = new SpeechToTextV1({
-      iam_apikey: 'RJI_KMPhW7p0TbxS0wt9P5QhX5GoPWNp3_53clUiOVxz',
+      iam_apikey: '',
       url: 'https://stream.watsonplatform.net/speech-to-text/api'
      });
      
@@ -379,7 +379,7 @@ app.post('/upload', upload.single('audio_data'), (req, res) => {
                                             let TextToSpeechV1 = require('ibm-watson/text-to-speech/v1');
                                           
                                             let textToSpeech = new TextToSpeechV1({
-                                              iam_apikey: '4O1t348Oao76tKdt_jYzQd3nC0c7wuZX6LFVFplWvszp',
+                                              iam_apikey: '',
                                             });
                                           
                                             let synthesizeParams = {
@@ -502,7 +502,7 @@ app.post('/upload', upload.single('audio_data'), (req, res) => {
                                             let TextToSpeechV1 = require('ibm-watson/text-to-speech/v1');
                                           
                                             let textToSpeech = new TextToSpeechV1({
-                                              iam_apikey: '4O1t348Oao76tKdt_jYzQd3nC0c7wuZX6LFVFplWvszp',
+                                              iam_apikey: '',
                                             });
                                           
                                             let synthesizeParams = {
@@ -606,7 +606,7 @@ var options = {
     headers: headers,
     body: dataString,
     auth: {
-        'apikey': '4O1t348Oao76tKdt_jYzQd3nC0c7wuZX6LFVFplWvszp'
+        'apikey': ''
     }
 };
 
